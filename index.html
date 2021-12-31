@@ -657,12 +657,12 @@
   <script type="text/javascript" charset="UTF-8" async="" src="./my_resource/watchman.min.js"></script>
   <script type="text/javascript">
     window.onload = () => {
-      audioAutoPlay('a-bgm');
+      audioAutoPlay('j-bgm');
     }
     function audioAutoPlay(id) {
-      var audio = document.getElementById(id);
+      const audio = document.getElementById(id);
 
-      var play = function () {
+      const play = function () {
         document.removeEventListener("WeixinJSBridgeReady", play);
         document.removeEventListener("YixinJSBridgeReady", play);
 
@@ -686,7 +686,7 @@
 </head>
 
 <body>
-  <audio id="a-bgm" src="./a.mp3" autoplay preload loop></audio>
+  <audio id="j-bgm" src="./a.mp3" autoplay preload loop></audio>
   <div id="outer-container"></div>
   <script>
     var list = [{
