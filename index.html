@@ -711,18 +711,18 @@
       loadAndAutoPlay = null;
     }
 /* 
-    使用示例
-    const bgm = new BGMAutoPlayMgr('http://192.168.1.1:8080/bgm.mp3');
-    function toggleBGM() {
-        bgm.toggleBGM();
-    } 
-    */
+            使用示例
+            const bgm = new BGMAutoPlayMgr('http://192.168.1.1:8080/bgm.mp3');
+            function toggleBGM() {
+                bgm.toggleBGM();
+            } 
+            */
 
   </script>
 </head>
 
 <body>
-  <audio id="j-bgm" src="./bgm.mp3" autoplay preload loop></audio>
+  <audio id="bgm" src="./bgm.mp3" autoplay preload loop></audio>
   <div id="outer-container"></div>
   <script>
     var list = [{
@@ -748,15 +748,6 @@
   </script>
 
   <p class="f-hide">年度代码报告</p>
-  <script>
-    var _hmt = _hmt || [];
-    (function () {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?9efc36149a02903cfe1272dbd1fcbbbd";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
   <script type="text/javascript">!
       function (c) {
         function e(e) {
