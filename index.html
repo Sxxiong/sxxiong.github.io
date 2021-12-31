@@ -657,29 +657,12 @@
   <script type="text/javascript" charset="UTF-8" async="" src="./my_resource/watchman.min.js"></script>
   <script type="text/javascript">
     window.onload = () => {
-      audioAutoPlay('j-bgm');
+      playAudio()
     }
-    function audioAutoPlay(id) {
-      const audio = document.getElementById(id);
-
-      const play = function () {
-        document.removeEventListener("WeixinJSBridgeReady", play);
-        document.removeEventListener("YixinJSBridgeReady", play);
-
-        audio.play();
-        audio.pause();
-        // document.removeEventListener("touchstart", play, false);
-      };
-
-      audio.play();
-      audio.pause();
-
-      //weixin
-      document.addEventListener("WeixinJSBridgeReady", play, false);
-      //yixin
-      document.addEventListener('YixinJSBridgeReady', play, false);
-
-      // document.addEventListener("touchstart", play, false);
+    const playAudio = () => {
+      document.querySelector('#outer-container').addEventListener('touchstart', () => {
+        document.getElementById('a-bgm').play()
+      })
     }
 
   </script>
